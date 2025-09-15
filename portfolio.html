@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our Portfolio - Merge Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="theme-dark">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="image/Logo.png" alt="Merge Studio Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html#hero" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">OUR SERVICES</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">OUR PORTFOLIO</a></li>
+                <li class="nav-item"><a href="videos.html" class="nav-link">PROJECT VIDEOS</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">ABOUT US</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumb-container">
+            <a href="index.html#hero" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current">Portfolio</span>
+        </div>
+    </div>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="portfolio-hero-container">
+            <h1 class="portfolio-hero-title">OUR PORTFOLIO</h1>
+            <p class="portfolio-hero-subtitle">Selected works across architecture, interiors, and construction</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-header">
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="architecture">ARCHITECTURE</button>
+                    <button class="filter-btn" data-filter="interior">INTERIOR</button>
+                    <button class="filter-btn" data-filter="construction">CONSTRUCTION</button>
+                </div>
+                <div class="portfolio-actions">
+                    <button class="pdf-view-btn" id="openPdfModal">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        VIEW PDF PORTFOLIO
+                    </button>
+                </div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item architecture" data-category="architecture">
+                    <div class="portfolio-image">
+                        <img src="image/slide1.jpg" alt="Architecture Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>ARCHITECTURE DESIGN</h3>
+                                <p>Architecture • Dhaka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item construction" data-category="construction">
+                    <div class="portfolio-image">
+                        <img src="image/slide2.png" alt="Construction">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>CONSTRUCTION</h3>
+                                <p>Interior • Chittagong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item construction" data-category="construction">
+                    <div class="portfolio-image">
+                        <img src="image/slide3.jpg" alt="Consultancy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>CONSULTANCY</h3>
+                                <p>Construction • Sylhet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item interior" data-category="interior">
+                    <div class="portfolio-image">
+                        <img src="image/slide4.png" alt="Residential Interior">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>RESIDENTIAL INTERIOR</h3>
+                                <p>Interior • Dhaka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item interior" data-category="interior">
+                    <div class="portfolio-image">
+                        <img src="image/Restaurant.jpg" alt="Commercial Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>COMMERCIAL DESIGN</h3>
+                                <p>Construction • Narayanganj</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item architecture" data-category="architecture">
+                    <div class="portfolio-image">
+                        <img src="image/1-750x499.jpg" alt="Exterior Setup">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>EXTERIOR SETUP</h3>
+                                <p>Architecture • Khulna</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item interior" data-category="interior">
+                    <div class="portfolio-image">
+                        <img src="image/Banasree_Dhaka.jpg" alt="Luxury Bedroom">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>LUXURY BEDROOM</h3>
+                                <p>Interior • Dhaka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item construction" data-category="construction">
+                    <div class="portfolio-image">
+                        <img src="image/younoos_centre.jpg" alt="Office Complex">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>OFFICE COMPLEX</h3>
+                                <p>Construction • Chittagong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item architecture" data-category="architecture">
+                    <div class="portfolio-image">
+                        <img src="image/Khulshi.jpg" alt="Modern Villa">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>MODERN VILLA</h3>
+                                <p>Architecture • Sylhet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="portfolio-services">
+        <div class="portfolio-services-container">
+            <h2 class="portfolio-services-title">OUR SERVICES</h2>
+            <div class="portfolio-services-grid">
+                <div class="portfolio-service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V21C3 22.11 3.89 23 5 23H19C20.11 23 21 22.11 21 21V9M19 9H14V4H5V21H19V9Z" fill="#f4d03f"/>
+                        </svg>
+                    </div>
+                    <h3 class="portfolio-service-title">Architecture Design</h3>
+                </div>
+
+                <div class="portfolio-service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12" fill="#f4d03f"/>
+                        </svg>
+                    </div>
+                    <h3 class="portfolio-service-title">Construction</h3>
+                </div>
+
+                <div class="portfolio-service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z" fill="#f4d03f"/>
+                        </svg>
+                    </div>
+                    <h3 class="portfolio-service-title">Consultancy</h3>
+                </div>
+
+                <div class="portfolio-service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" fill="#f4d03f"/>
+                        </svg>
+                    </div>
+                    <h3 class="portfolio-service-title">Residential Interior</h3>
+                </div>
+
+                <div class="portfolio-service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1C5.93 1 1 5.93 1 12S5.93 23 12 23 23 18.07 23 12 18.07 1 12 1ZM12 21C7.04 21 3 16.96 3 12S7.04 3 12 3 21 7.04 21 12 16.96 21 12 21ZM12 6C9.79 6 8 7.79 8 10S9.79 14 12 14 16 12.21 16 10 14.21 6 12 6ZM12 12C10.9 12 10 11.1 10 10S10.9 8 12 8 14 8.9 14 10 13.1 12 12 12Z" fill="#f4d03f"/>
+                        </svg>
+                    </div>
+                    <h3 class="portfolio-service-title">Commercial Design</h3>
+                </div>
+
+                <div class="portfolio-service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22L6.66 19.7C7.14 19.87 7.64 20 8 20C19 20 22 3 22 3C21 5 14 5.25 9 6.25C4 7.25 2 11.5 2 13.5C2 15.5 3.75 17.25 6 17.25C7.12 17.25 8.19 16.81 9 16.12C9.81 15.43 10.25 14.36 10.25 13.25C10.25 12.13 9.81 11.06 9 10.37C8.19 9.68 7.12 9.25 6 9.25C4.88 9.25 3.81 9.69 3 10.38C2.19 11.07 1.75 12.14 1.75 13.25C1.75 14.36 2.19 15.43 3 16.12C3.81 16.81 4.88 17.25 6 17.25Z" fill="#f4d03f"/>
+                        </svg>
+                    </div>
+                    <h3 class="portfolio-service-title">Exterior Setup</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo-wrap">
+                    <img src="image/Logo.png" alt="Merge Studio Logo" class="footer-logo">
+                </div>
+                <p class="footer-about">Merge Studio is one of the best Architecture & Interior Design Firm based in Dhaka & Chattogram dealing with architectural planning, building construction, interior design, renovation, etc.</p>
+            </div>
+            <div class="footer-right">
+                <h3 class="footer-heading">CONTACT US</h3>
+                <ul class="footer-contact-list">
+                    <li><span class="label">Address:</span> Eastern Plaza, Hatirpool, Dhaka, Bangladesh</li>
+                    <li><span class="label">Address:</span> Chattogram 4th Floor, jalal Plaza, Muradpur, Chattogram</li>
+                    <li><span class="label">Phone:</span>+880 1625-990701</li>
+                    <li><span class="label">Email:</span> mergestudiobd@gmail.com</li>
+                    <li><span class="label">Service Areas:</span> Dhaka, Chittagong, Sylhet, and across Bangladesh</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Merge Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- PDF Modal -->
+    <div class="pdf-modal" id="pdfModal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h3>Portfolio PDF</h3>
+                <button class="pdf-modal-close" id="closePdfModal">&times;</button>
+            </div>
+            <div class="pdf-modal-body">
+                <div class="pdf-viewer-container">
+                    <iframe id="pdfViewer" src="Portfolio.pdf#toolbar=1&navpanes=1&scrollbar=1" width="100%" height="600px" frameborder="0"></iframe>
+                    <div class="pdf-fallback" id="pdfFallback" style="display: none;">
+                        <div class="fallback-content">
+                            <div class="fallback-icon">📄</div>
+                            <h3>Unable to display PDF</h3>
+                            <p>Your browser may not support PDF viewing. Please use one of the options below:</p>
+                            <div class="fallback-actions">
+                                <a href="Portfolio.pdf" target="_blank" class="pdf-view-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 17.7893 16.5304 18 16 18H8C7.46957 18 6.96086 17.7893 6.58579 17.4142C6.21071 17.0391 6 16.5304 6 16V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="8,6 12,2 16,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <line x1="12" y1="2" x2="12" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    OPEN IN NEW TAB
+                                </a>
+                                <a href="Portfolio.pdf" download="Merge_Studio_Portfolio.pdf" class="pdf-download-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    DOWNLOAD PDF
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pdf-modal-actions">
+                    <a href="Portfolio.pdf" target="_blank" class="pdf-view-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 17.7893 16.5304 18 16 18H8C7.46957 18 6.96086 17.7893 6.58579 17.4142C6.21071 17.0391 6 16.5304 6 16V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="8,6 12,2 16,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="2" x2="12" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        OPEN IN NEW TAB
+                    </a>
+                    <a href="Portfolio.pdf" download="Merge_Studio_Portfolio.pdf" class="pdf-download-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        DOWNLOAD PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Gallery Modal -->
+    <div class="portfolio-lightbox-modal" id="portfolioLightboxModal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="closeLightbox">&times;</button>
+            <div class="lightbox-grid" id="lightboxGrid">
+                <!-- Images will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
